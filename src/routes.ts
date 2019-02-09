@@ -5,4 +5,5 @@ export class Routes {
     public routes(app): void {
         // AuthenticationRoutes.routes(app);
         PartnerRoutes.routes(app);
+    }
 }
