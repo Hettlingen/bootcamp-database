@@ -1,0 +1,8 @@
+GET http://localhost:3000/api/v1/partner
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-14T114427.200.json
+
+###
+

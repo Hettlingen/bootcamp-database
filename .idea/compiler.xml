@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7" />
+  </component>
+  <component name="TypeScriptCompiler">
+    <option name="isCompilerEnabled" value="true" />
+    <option name="hasOutDirectory" value="true" />
+    <option name="outDirectory" value="$USER_HOME$/Documents/SCOOP/SCOOP_Solutions/Development/ide/intellij/scoop/web/resources/javascript" />
+  </component>
+</project>

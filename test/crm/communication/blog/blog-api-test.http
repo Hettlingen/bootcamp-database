@@ -1,0 +1,34 @@
+GET {{host-url}}/api/v1/blogs/
+Content-Type: application/json
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+// Read one Blog
+GET http://localhost:8081/api/v1/blogs/550e8400-e29b-11d4-a716-446655450000
+Content-Type: application/json
+Cache-Control: no-cache
+
+###
+
+// Read one Post Category by uuid
+GET http://localhost:8081/api/v1/post-categories/550e8400-e29b-11d4-a716-446655440000
+Content-Type: application/json
+Cache-Control: no-cache
+
+###
+
+// Read Post Categories by uuid of a Blog
+GET http://localhost:8081/api/v1/blog/blog-categories/550e8400-e29b-11d4-a716-446655450000
+Content-Type: application/json
+Cache-Control: no-cache
+
+###
+
+// Read one Post by uuid
+GET http://localhost:8081/api/v1/posts/550e8400-e29b-11d4-a716-446655440000
+Content-Type: application/json
+Cache-Control: no-cache
+
+###

@@ -1,0 +1,37 @@
+
+POST http://localhost:8081/api/v1/user-account/register
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "firstName": "Martin",
+  "lastName": "Braun",
+  "age": 49,
+  "gender": 1,
+  "listRole": [
+    {
+      "nickname": "Rotwild",
+      "userAccount": {
+        "listCredentials": [
+          {
+            "userName": "Martin",
+            "password": "scoop"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+###
+
+POST http://localhost:8081/api/v1/user-account/login
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "userName": "Martin",
+  "password": "scoop"
+}
+
+###
