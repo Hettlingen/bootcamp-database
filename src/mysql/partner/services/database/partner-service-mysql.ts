@@ -41,31 +41,6 @@ export class PartnerServiceMysql {
                 .then(function () {
                     return Promise.all([
                         session.sql('USE PartnerSchema').execute(),
-                        session.sql('SELECT * FROM Person').execute(function (listPerson: Person[]) {
-                            resolve(listPerson);
-                        })
-                    ])
-                })
-                .catch(function (error: any) {
-                    reject(new Error('SQL-Service, Fehler beim Lesen der Personen: ' + error));
-                });
-        });
-    }
-
-    // map to JSON result
-    static readListPerson_2(): Promise<Person[]> {
-        return new Promise(function (resolve, reject) {
-            const mysqlx = require('@mysql/xdevapi');
-            let session: any;
-
-            mysqlx
-                .getSession(configDatabase)
-                .then(function (sessionNew: any) {
-                    session = sessionNew;
-                })
-                .then(function () {
-                    return Promise.all([
-                        session.sql('USE PartnerSchema').execute(),
                         session.sql('SELECT json_object(\'firstName\', firstName, \'lastName\', lastName) FROM Person').execute(function (listPerson: Person[]) {
                             resolve(listPerson);
                         })

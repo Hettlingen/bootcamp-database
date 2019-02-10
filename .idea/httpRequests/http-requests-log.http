@@ -2,6 +2,54 @@ GET http://localhost:8081/api/v1/partner
 Accept: */*
 Cache-Control: no-cache
 
+<> 2019-02-10T105359.200.json
+
+###
+
+GET http://localhost:8081/api/v1/partner
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-10T105324.200.json
+
+###
+
+GET http://localhost:8081/api/v1/partner
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-10T105250.200.json
+
+###
+
+GET http://localhost:8081/api/v1/partner
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-10T105000.200.json
+
+###
+
+GET http://localhost:8081/api/v1/partner
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-10T104912.404.html
+
+###
+
+GET http://localhost:8081/api/v1/partner
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-09T011720.404.html
+
+###
+
+GET http://localhost:8081/api/v1/partner
+Accept: */*
+Cache-Control: no-cache
+
 <> 2019-02-09T111428.404.html
 
 ###
