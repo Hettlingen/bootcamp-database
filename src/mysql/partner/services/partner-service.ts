@@ -1,4 +1,5 @@
 import {PartnerServiceMysql} from "./database/partner-service-mysql";
+import {Person} from "../model/person";
 
 export class PartnerService {
 
@@ -11,7 +12,7 @@ export class PartnerService {
         });
     }
 
-    static getListPerson() {
+    static getListPerson(): Promise<Person[]> {
         return PartnerServiceMysql.readListPerson()
             .then(function(listPerson) {
                 return listPerson;

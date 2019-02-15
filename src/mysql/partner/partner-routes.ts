@@ -8,7 +8,6 @@ export class PartnerRoutes {
         });
 
         app.get('/api/v1/partner', function(request: Request, response: Response) {
-            console.log('Alle Partner lesen');
             PartnerServiceRest.getListPerson(request, response);
         });
     }

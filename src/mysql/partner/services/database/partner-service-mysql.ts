@@ -41,7 +41,10 @@ export class PartnerServiceMysql {
                 .then(function () {
                     return Promise.all([
                         session.sql('USE PartnerSchema').execute(),
-                        session.sql('SELECT JSON_ARRAYAGG(JSON_OBJECT(\'firstName\', firstName, \'lastName\', lastName)) FROM Person').execute(function (listPerson: Person[]) {
+                        session.sql('SELECT JSON_ARRAYAGG(' +
+                            'JSON_OBJECT(' +
+                            '\'firstName\', firstName,' +
+                            '\'lastName\', lastName)) FROM Person').execute(function (listPerson: Person[]) {
                             resolve(listPerson);
                         })
                     ])
