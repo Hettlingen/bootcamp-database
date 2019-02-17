@@ -1,9 +1,13 @@
 
-GET http://localhost:8081/api/v1/partner
+GET http://localhost:8081/api/v1/person
 Accept: */*
 Cache-Control: no-cache
 
-<> 2018-10-14T114427.200.json
+###
+
+GET http://localhost:8081/api/v1/person/dc50bb13-6e19-4da5-b888-b860b53560e5
+Accept: */*
+Cache-Control: no-cache
 
 ###
 
